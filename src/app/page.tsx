@@ -7,6 +7,7 @@ import {
   Heading,
   Input,
   useColorMode,
+  Image,
 } from "@chakra-ui/react";
 
 import Header from "../../components/Header";
@@ -17,9 +18,11 @@ import Skills from "../../components/Skills";
 import Works from "../../components/Works";
 import Contacts from "../../components/Contacts";
 
+import OldPaper from "../../public/old-paper.jpg";
+
 export default function Home() {
   return (
-    <Box background="gray.200" h="100vh">
+    <Box background="gray.200" h="100%">
       <Header />
       <AboutMe />
       <Educations />
