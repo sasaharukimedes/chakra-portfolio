@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Button,
@@ -19,13 +17,18 @@ export default function Contacts() {
         <Heading mb={2}>Contact</Heading>
 
         <Input
-          placeholder="sample@sample.com"
+          placeholder="YourEmailAddress@sample.com"
           variant="filled"
           mb={3}
           type="email"
         />
 
-        <Input placeholder="********" variant="filled" mb={6} type="password" />
+        <Input
+          placeholder="お問い合わせ内容はこちらにお願いします。"
+          variant="filled"
+          mb={6}
+          type="content"
+        />
 
         <Button mb={6} colorScheme="teal">
           Contact Me!

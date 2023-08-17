@@ -13,7 +13,7 @@ import {
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AboutMe from "../../components/AboutMe";
-import Educations from "../../components/Educatrions";
+import Educations from "../../components/Educations";
 import Skills from "../../components/Skills";
 import Works from "../../components/Works";
 import Contacts from "../../components/Contacts";

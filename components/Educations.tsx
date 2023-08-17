@@ -1,15 +1,7 @@
-"use client";
-
 import {
-  Box,
-  Button,
-  Flex,
   Heading,
   Center,
-  List,
   ListItem,
-  ListIcon,
-  OrderedList,
   UnorderedList,
   Text,
 } from "@chakra-ui/react";
