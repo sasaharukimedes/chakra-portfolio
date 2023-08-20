@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <>
       <Heading padding={6} minWidth="max-content">
-        <Center m={2}>I'm Harukimedes!</Center>
+        <Center m={2}>{`I'm Harukimedes!`}</Center>
       </Heading>
       <Flex justifyContent="flex-end">
         <Button onClick={toggleColorMode}>Change Color Mode</Button>
