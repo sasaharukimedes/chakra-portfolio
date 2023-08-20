@@ -29,7 +29,7 @@ export default function AboutMe() {
         </Center>
         <Box flex="1">
           <Stack spacing={2}>
-            <Text fontSize={"lg"} as="B" p={5}>
+            <Text fontSize={"lg"} fontWeight="semibold" p={5}>
               僕のポートフォリオへようこそ！
               <br />
               僕はハルキメデスと言います。1995年に北海道は函館で生まれた、現在28歳です。
