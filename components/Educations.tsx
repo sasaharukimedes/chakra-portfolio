@@ -13,7 +13,7 @@ export default function Educations() {
         <Center m={2}>Educations</Center>
       </Heading>
       <Center>
-        <Text fontSize="lg" as="B">
+        <Text fontSize="lg" fontWeight="semibold">
           <UnorderedList>
             <ListItem>1995年7月9日 生誕</ListItem>
             <ListItem>2011年 函館ラ・サール高校 入学</ListItem>
