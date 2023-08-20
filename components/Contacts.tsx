@@ -1,15 +1,31 @@
 import {
-  Box,
   Button,
   Flex,
   Heading,
   Input,
-  useColorMode,
   Center,
+  Text,
+  VStack,
+  Textarea,
+  FormControl,
+  FormLabel,
 } from "@chakra-ui/react";
 
+import { useForm } from "@formspree/react";
+
 export default function Contacts() {
-  const { toggleColorMode } = useColorMode();
+  const [state, handleSubmit] = useForm("xdorgaak");
+  if (state.succeeded) {
+    return (
+      <Center>
+        <Text>
+          お問い合わせありがとうございます。
+          <br />
+          返信をしばらくお待ち下さい。
+        </Text>
+      </Center>
+    );
+  }
 
   return (
     <>
@@ -18,27 +34,36 @@ export default function Contacts() {
           <Center m={2}>Contact</Center>
         </Heading>
 
-        <Input placeholder="John Doe" variant="filled" mb={3} type="name" />
+        {/* <VStack justify="center" align="center">
+          <FormControl onSubmit={handleSubmit}>
+            <FormLabel htmlFor="name">お名前</FormLabel>
+            <Input id="name" type="text" name="name" required={true} />
+            <FormLabel htmlFor="email" mt={4}>
+              メールアドレス
+            </FormLabel>
+            <Input id="email" type="email" name="email" required={true} />
+            <FormLabel htmlFor="message" mt={4}>
+              お問い合わせ内容
+            </FormLabel>
+            <Textarea id="message" name="message" required={true} />
+            <Button type="submit" disabled={state.submitting} mt={4}>
+              送信{" "}
+            </Button>{" "}
+          </FormControl>
+        </VStack> */}
 
-        <Input
-          placeholder="YourEmailAddress@sample.com"
-          variant="filled"
-          mb={3}
-          type="email"
-        />
-
-        <Input
-          placeholder="お問い合わせ内容はこちらにお願いします。"
-          variant="filled"
-          mb={6}
-          type="content"
-        />
-
-        <Button mb={6} colorScheme="teal">
-          Contact Me!
-        </Button>
-
-        <Button onClick={toggleColorMode}>Change Color Mode</Button>
+        <h1>お問い合わせ</h1>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">お名前</label>
+          <input id="name" type="text" name="name" required={true} />
+          <label htmlFor="email">メールアドレス</label>
+          <input id="email" type="email" name="email" required={true} />
+          <label htmlFor="message">内容</label>
+          <textarea id="message" name="message" required={true} />
+          <button type="submit" disabled={state.submitting}>
+            送信
+          </button>
+        </form>
       </Flex>
     </>
   );
