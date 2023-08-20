@@ -2,19 +2,15 @@ import NextLink from "next/link";
 
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Heading,
   Center,
   Stack,
-  StackDivider,
-  Box,
   Text,
   Button,
   Image,
   Link,
-  ExternalLinkIcon,
 } from "@chakra-ui/react";
 
 import MyIcon from "../public/my-icon.gif";
