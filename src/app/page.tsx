@@ -18,11 +18,11 @@ import Skills from "../../components/Skills";
 import Works from "../../components/Works";
 import Contacts from "../../components/Contacts";
 
-import OldPaper from "../../public/old-paper.jpg";
+// import OldPaper from "../../public/old-paper.jpg";
 
 export default function Home() {
   return (
-    <Box background="gray.200" h="100%">
+    <Box background="BlackAlpha700" color="WhiteAlpha700" h="100%">
       <Header />
       <AboutMe />
       <Educations />

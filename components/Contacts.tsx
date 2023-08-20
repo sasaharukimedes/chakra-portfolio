@@ -14,7 +14,11 @@ export default function Contacts() {
   return (
     <>
       <Flex direction="column" padding={5} rounded={6}>
-        <Heading mb={2}>Contact</Heading>
+        <Heading mb={2}>
+          <Center m={2}>Contact</Center>
+        </Heading>
+
+        <Input placeholder="John Doe" variant="filled" mb={3} type="name" />
 
         <Input
           placeholder="YourEmailAddress@sample.com"
@@ -34,7 +38,7 @@ export default function Contacts() {
           Contact Me!
         </Button>
 
-        <Button onClick={toggleColorMode}>Toggle Color Mode</Button>
+        <Button onClick={toggleColorMode}>Change Color Mode</Button>
       </Flex>
     </>
   );

@@ -1,3 +1,5 @@
+import NextLink from "next/link";
+
 import {
   Card,
   CardHeader,
@@ -11,7 +13,13 @@ import {
   Text,
   Button,
   Image,
+  Link,
+  ExternalLinkIcon,
 } from "@chakra-ui/react";
+
+import MyIcon from "../public/my-icon.gif";
+import Kotonoha from "../public/kotonoha.jpg";
+import BlogImage from "../public/blog.jpg";
 
 export default function Works() {
   return (
@@ -28,8 +36,8 @@ export default function Works() {
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-          alt="Caffe Latte"
+          src={Kotonoha.src}
+          alt="kotonoha"
         />
 
         <Stack>
@@ -48,7 +56,13 @@ export default function Works() {
 
           <CardFooter>
             <Button variant="solid" colorScheme="blue">
-              Click me!
+              <Link
+                as={NextLink}
+                href="https://gen3-kotonoha.onrender.com/"
+                _hover={{ fontWeight: "bold" }}
+              >
+                Click Me!
+              </Link>
             </Button>
           </CardFooter>
         </Stack>
@@ -62,7 +76,7 @@ export default function Works() {
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+          src={BlogImage.src}
           alt="Caffe Latte"
         />
 
@@ -85,7 +99,13 @@ export default function Works() {
 
           <CardFooter>
             <Button variant="solid" colorScheme="blue">
-              Click me!
+              <Link
+                as={NextLink}
+                href="https://my-updating-logs.deno.dev/"
+                _hover={{ fontWeight: "bold" }}
+              >
+                Click Me!
+              </Link>
             </Button>
           </CardFooter>
         </Stack>
@@ -99,13 +119,13 @@ export default function Works() {
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+          src={MyIcon.src}
           alt="Caffe Latte"
         />
 
         <Stack>
           <CardBody>
-            <Heading size="md">ポートフォリオ</Heading>
+            <Heading size="md">このポートフォリオ</Heading>
 
             <Text py="2">
               自分のプログラミング活動まとめ用にこのポートフォリオを作成しました。
@@ -117,12 +137,6 @@ export default function Works() {
               これから、更に内容とポートフォリオ自体を充実させるべくアップデートしていきたいと思います。
             </Text>
           </CardBody>
-
-          <CardFooter>
-            <Button variant="solid" colorScheme="blue">
-              Click me!
-            </Button>
-          </CardFooter>
         </Stack>
       </Card>
     </>

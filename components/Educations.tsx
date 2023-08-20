@@ -19,9 +19,7 @@ export default function Educations() {
             <ListItem>2011年 函館ラ・サール高校 入学</ListItem>
             <ListItem>2014-2015年 1年間浪人</ListItem>
             <ListItem>2015年 明治大学国際日本学部 入学</ListItem>
-            <ListItem>
-              卒業後、フリーターやら現在サラリーマンやら。。。
-            </ListItem>
+            <ListItem>卒業後、フリーターやらサラリーマンやら。。。</ListItem>
           </UnorderedList>
         </Text>
       </Center>
