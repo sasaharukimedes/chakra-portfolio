@@ -36,7 +36,7 @@ export default function Contacts() {
 
         <VStack justify="center" align="center">
           <form onSubmit={handleSubmit}>
-            <FormControl onSubmit={handleSubmit}>
+            <FormControl>
               <FormLabel htmlFor="name">お名前</FormLabel>
               <Input id="name" type="text" name="name" required={true} />
               <FormLabel htmlFor="email" mt={4}>
