@@ -41,49 +41,55 @@ export default function Skills() {
       </Heading>
       <Center p={2}>
         <Box>
-          <Heading size="lg">Programming Languages</Heading>
-          <Flex direction="row" pt={8} justifyContent="space-between">
+          <Center>
+            <Heading size="lg">Programming Languages</Heading>
+          </Center>
+          <Flex direction={"row"} pt={8} justifyContent="center">
             <SiRuby size="40px" />
             <Spacer />
             <SiTypescript size="40px" />
             <Spacer />
             <SiJavascript size="40px" />
           </Flex>
-          <Heading size="lg" pt={10}>
-            Libraries and Frameworks
-          </Heading>
-          <Flex direction="row" pt={8} justifyContent="space-between">
-            <SiRubyonrails size="80px" m={4} />
+          <Center>
+            <Heading size="lg" pt={10}>
+              Libraries and Frameworks
+            </Heading>
+          </Center>
+          <Flex direction={"row"} pt={8} justifyContent="center">
+            <SiRubyonrails size="40px" m={4} />
             <Spacer />
-            <SiReact size="80px" m={4} />
+            <SiReact size="40px" m={4} />
             <Spacer />
-            <TbBrandNextjs size="80px" m={4} />
+            <TbBrandNextjs size="40px" m={4} />
             <Spacer />
-            <SiTailwindcss size="80px" m={4} />
+            <SiTailwindcss size="40px" m={4} />
             <Spacer />
-            <SiChakraui size="80px" m={4} />
+            <SiChakraui size="40px" m={4} />
             <Spacer />
-            <SiBootstrap size="80px" m={4} />
+            <SiBootstrap size="40px" m={4} />
             <Spacer />
-            <SiDeno size="80px" m={4} />
+            <SiDeno size="40px" m={4} />
             <Spacer />
-            <TbLemon2 size="80px" m={4} />
+            <TbLemon2 size="40px" m={4} />
           </Flex>
-          <Heading size="lg" pt={10}>
-            Further knowledges
-          </Heading>
-          <Flex direction="row" pt={8} justifyContent="space-between">
-            <SiHtml5 size="80px" m={4} />
+          <Center>
+            <Heading size="lg" pt={10}>
+              Further knowledges
+            </Heading>
+          </Center>
+          <Flex direction={"row"} pt={8} justifyContent="center">
+            <SiHtml5 size="40px" m={4} />
             <Spacer />
-            <SiCss3 size="80px" m={4} />
+            <SiCss3 size="40px" m={4} />
             <Spacer />
-            <SiGithub size="80px" m={4} />
+            <SiGithub size="40px" m={4} />
             <Spacer />
-            <SiRender size="80px" m={4} />
+            <SiRender size="40px" m={4} />
             <Spacer />
-            <SiHeroku size="80px" m={4} />
+            <SiHeroku size="40px" m={4} />
             <Spacer />
-            <SiLinux size="80px" m={4} />
+            <SiLinux size="40px" m={4} />
           </Flex>
         </Box>
       </Center>
