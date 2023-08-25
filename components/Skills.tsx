@@ -1,15 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Input,
-  useColorMode,
-  Center,
-  VStack,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Center, Spacer, Tooltip } from "@chakra-ui/react";
 
 import {
   SiRuby,
@@ -27,13 +16,12 @@ import {
   SiChakraui,
   SiJavascript,
   SiLinux,
+  SiVercel,
 } from "react-icons/si";
 
 import { TbBrandNextjs, TbLemon2 } from "react-icons/tb";
 
 export default function Skills() {
-  const { toggleColorMode } = useColorMode();
-
   return (
     <>
       <Heading padding={6}>
@@ -45,11 +33,23 @@ export default function Skills() {
             <Heading size="lg">Programming Languages</Heading>
           </Center>
           <Flex direction={"row"} pt={8} justifyContent="center">
-            <SiRuby size="40px" />
+            <Tooltip label="Ruby" fontSize="md">
+              <span>
+                <SiRuby size="40px" />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiTypescript size="40px" />
+            <Tooltip label="Typescript" fontSize="md">
+              <span>
+                <SiTypescript size="40px" />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiJavascript size="40px" />
+            <Tooltip label="Javascript" fontSize="md">
+              <span>
+                <SiJavascript size="40px" />
+              </span>
+            </Tooltip>
           </Flex>
           <Center>
             <Heading size="lg" pt={10}>
@@ -57,21 +57,53 @@ export default function Skills() {
             </Heading>
           </Center>
           <Flex direction={"row"} pt={8} justifyContent="center">
-            <SiRubyonrails size="40px" m={4} />
+            <Tooltip label="Ruby on Rails" fontSize="md">
+              <span>
+                <SiRubyonrails size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiReact size="40px" m={4} />
+            <Tooltip label="React.js" fontSize="md">
+              <span>
+                <SiReact size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <TbBrandNextjs size="40px" m={4} />
+            <Tooltip label="Next.js" fontSize="md">
+              <span>
+                <TbBrandNextjs size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiTailwindcss size="40px" m={4} />
+            <Tooltip label="TailwindCSS" fontSize="md">
+              <span>
+                <SiTailwindcss size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiChakraui size="40px" m={4} />
+            <Tooltip label="ChakraUI" fontSize="md">
+              <span>
+                <SiChakraui size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiBootstrap size="40px" m={4} />
+            <Tooltip label="Bootstrap" fontSize="md">
+              <span>
+                <SiBootstrap size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiDeno size="40px" m={4} />
+            <Tooltip label="Deno" fontSize="md">
+              <span>
+                <SiDeno size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <TbLemon2 size="40px" m={4} />
+            <Tooltip label="Fresh" fontSize="md">
+              <span>
+                <TbLemon2 size="40px" m={4} />
+              </span>
+            </Tooltip>
           </Flex>
           <Center>
             <Heading size="lg" pt={10}>
@@ -79,17 +111,47 @@ export default function Skills() {
             </Heading>
           </Center>
           <Flex direction={"row"} pt={8} justifyContent="center">
-            <SiHtml5 size="40px" m={4} />
+            <Tooltip label="HTML5" fontSize="md">
+              <span>
+                <SiHtml5 size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiCss3 size="40px" m={4} />
+            <Tooltip label="CSS3" fontSize="md">
+              <span>
+                <SiCss3 size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiGithub size="40px" m={4} />
+            <Tooltip label="Github" fontSize="md">
+              <span>
+                <SiGithub size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiRender size="40px" m={4} />
+            <Tooltip label="Render" fontSize="md">
+              <span>
+                <SiRender size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiHeroku size="40px" m={4} />
+            <Tooltip label="Heroku" fontSize="md">
+              <span>
+                <SiHeroku size="40px" m={4} />
+              </span>
+            </Tooltip>
             <Spacer />
-            <SiLinux size="40px" m={4} />
+            <Tooltip label="Linux" fontSize="md">
+              <span>
+                <SiLinux size="40px" m={4} />
+              </span>
+            </Tooltip>
+            <Spacer />
+            <Tooltip label="Vercel" fontSize="md">
+              <span>
+                <SiVercel size="40px" m={4} />
+              </span>
+            </Tooltip>
           </Flex>
         </Box>
       </Center>
