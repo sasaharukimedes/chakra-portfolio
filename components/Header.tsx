@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Input,
-  useColorMode,
-  Center,
-} from "@chakra-ui/react";
+import { Button, Flex, Heading, useColorMode, Center } from "@chakra-ui/react";
 
 export default function Header() {
   const { toggleColorMode } = useColorMode();
