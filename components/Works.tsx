@@ -20,14 +20,14 @@ import BlogImage from "../public/blog.jpg";
 export default function Works() {
   return (
     <>
-      <Heading padding={6} minWidth="max-content">
+      <Heading pt={16} minWidth="max-content">
         <Center m={2}>Works</Center>
       </Heading>
       <Card
         direction={{ base: "column", sm: "row" }}
         overflow="hidden"
         variant="outline"
-        m={5}
+        m={10}
       >
         <Image
           objectFit="cover"
@@ -69,7 +69,7 @@ export default function Works() {
         direction={{ base: "column", sm: "row" }}
         overflow="hidden"
         variant="outline"
-        m={5}
+        m={10}
       >
         <Image
           objectFit="cover"
@@ -111,7 +111,7 @@ export default function Works() {
         direction={{ base: "column", sm: "row" }}
         overflow="hidden"
         variant="outline"
-        m={5}
+        m={10}
       >
         <Image
           objectFit="cover"

@@ -24,15 +24,20 @@ import { TbBrandNextjs, TbLemon2 } from "react-icons/tb";
 export default function Skills() {
   return (
     <>
-      <Heading padding={6}>
+      <Heading pt={16}>
         <Center m={2}>Skills</Center>
+      </Heading>
+      <Heading size="sm">
+        <Center m={2}>~Still Learning~</Center>
       </Heading>
       <Center p={2}>
         <Box>
           <Center>
-            <Heading size="lg">Programming Languages</Heading>
+            <Heading size="lg" pt={4}>
+              Programming Languages
+            </Heading>
           </Center>
-          <Flex direction={"row"} pt={8} justifyContent="center">
+          <Flex direction={"row"} pt={4} justifyContent="center">
             <Tooltip label="Ruby" fontSize="md">
               <span>
                 <SiRuby size="40px" />
@@ -52,11 +57,11 @@ export default function Skills() {
             </Tooltip>
           </Flex>
           <Center>
-            <Heading size="lg" pt={10}>
+            <Heading size="lg" pt={14}>
               Libraries and Frameworks
             </Heading>
           </Center>
-          <Flex direction={"row"} pt={8} justifyContent="center">
+          <Flex direction={"row"} pt={4} justifyContent="center">
             <Tooltip label="Ruby on Rails" fontSize="md">
               <span>
                 <SiRubyonrails size="40px" m={4} />
@@ -106,11 +111,11 @@ export default function Skills() {
             </Tooltip>
           </Flex>
           <Center>
-            <Heading size="lg" pt={10}>
+            <Heading size="lg" pt={14}>
               Further knowledges
             </Heading>
           </Center>
-          <Flex direction={"row"} pt={8} justifyContent="center">
+          <Flex direction={"row"} pt={4} justifyContent="center">
             <Tooltip label="HTML5" fontSize="md">
               <span>
                 <SiHtml5 size="40px" m={4} />

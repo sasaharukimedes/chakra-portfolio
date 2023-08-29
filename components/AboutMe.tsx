@@ -3,11 +3,11 @@ import {
   Heading,
   Center,
   Image,
-  Text,
   Stack,
   Tooltip,
   Link,
   Flex,
+  Container,
 } from "@chakra-ui/react";
 
 import { SiGithub } from "react-icons/si";
@@ -41,10 +41,16 @@ export default function AboutMe() {
         </Flex>
         <Box flex="1">
           <Stack spacing={2}>
-            <Text fontSize={"lg"} fontWeight="semibold" p={5}>
+            <Container fontSize={"lg"} fontWeight="semibold">
               僕のポートフォリオへようこそ！
               <br />
-              僕はハルキメデスと言います。1995年に北海道は函館で生まれた、現在28歳です。
+              僕はハルキメデスと言います。
+              <br />
+              1995年に北海道は函館で生まれた、現在28歳です。
+              <br />
+              高校までは水泳とハンドボールをずっとやっていました。
+              <br />
+              大学では、ゼミに2つ入り「国際政治経済」と「テクノロジーと社会システム」について勉強していました。
               <br />
               趣味は、ゲーム、映画、漫画、筋トレ、スポーツ、読書、カラオケなどです。
               <br />
@@ -56,7 +62,7 @@ export default function AboutMe() {
               そして、もっと自分の作ってみたいものを作ったり、あるいは表現したいものを表現できるように、
               <br />
               人としてもプログラマとしても、スキルアップできるよう転職活動をしてみようと思い、このポートフォリオの作成を始めました。
-            </Text>
+            </Container>
           </Stack>
         </Box>
       </Box>

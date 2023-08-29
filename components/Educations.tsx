@@ -9,7 +9,7 @@ import {
 export default function Educations() {
   return (
     <>
-      <Heading padding={6} minWidth="max-content">
+      <Heading pt={16} minWidth="max-content">
         <Center m={2}>Educations</Center>
       </Heading>
       <Center>

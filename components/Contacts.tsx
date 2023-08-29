@@ -29,7 +29,7 @@ export default function Contacts() {
 
   return (
     <>
-      <Flex direction="column" padding={5} rounded={6}>
+      <Flex direction="column" padding={2} rounded={6}>
         <Heading mb={2}>
           <Center m={2}>Contact</Center>
         </Heading>

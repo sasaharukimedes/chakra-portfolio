@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Input,
-  useColorMode,
-  Image,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
