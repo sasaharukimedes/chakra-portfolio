@@ -10,7 +10,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiZenn } from "react-icons/si";
 
 import MyIcon from "../public/my-icon.gif";
 
@@ -30,11 +30,18 @@ export default function AboutMe() {
             mx={1}
           />
         </Center>
-        <Flex justify="center" align="center" py={3}>
-          <Tooltip label="My Github" fontSize="md">
+        <Flex justify="center" align="center" p={3}>
+          <Tooltip label="My Github" fontSize="md" p={2}>
             <span>
               <Link href="https://github.com/sasaharukimedes">
                 <SiGithub size="40px" />
+              </Link>
+            </span>
+          </Tooltip>
+          <Tooltip label="My Zenn" fontSize="md" p={2}>
+            <span>
+              <Link href="https://zenn.dev/sasaharumedes">
+                <SiZenn size="40px" />
               </Link>
             </span>
           </Tooltip>
