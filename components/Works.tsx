@@ -33,7 +33,7 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            maxW={{ base: "100%", sm: "200px" }}
+            boxSize="400px"
             src={Kotonoha.src}
             alt="kotonoha"
           />
@@ -81,7 +81,7 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            maxW={{ base: "100%", sm: "200px" }}
+            boxSize="400px"
             src={BlogImage.src}
             alt="Caffe Latte"
           />
@@ -98,9 +98,7 @@ export default function Works() {
                 <br />
                 microCMS作成した記事を取ってくるようにしています。
                 <br />
-                個人的に考えていることなんかを書いていますので、気になった方は読んでみてください。
-                <br />
-                （もっと見栄えも良くしたいのでGFMで書けるようにしようと思ってます）
+                こちらも作り替えてる途中です。
               </Text>
             </CardBody>
 
@@ -128,7 +126,7 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            maxW={{ base: "100%", sm: "200px" }}
+            boxSize="200px"
             src={MyIcon.src}
             alt="Caffe Latte"
           />
