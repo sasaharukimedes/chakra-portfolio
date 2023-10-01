@@ -33,7 +33,8 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            boxSize="400px"
+            width={"20%"}
+            height={"auto"}
             src={Kotonoha.src}
             alt="kotonoha"
           />
@@ -81,7 +82,8 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            boxSize="400px"
+            width={"20%"}
+            height={"auto"}
             src={BlogImage.src}
             alt="Caffe Latte"
           />
@@ -126,7 +128,8 @@ export default function Works() {
         >
           <Image
             objectFit="cover"
-            boxSize="200px"
+            width={"20%"}
+            height={"auto"}
             src={MyIcon.src}
             alt="Caffe Latte"
           />
